@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="App1.css">
+    <title>ChatCord App</title>
+</head>
+
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1><i class="fas fa-smile"></i> ChatCord</h1>
+            <button type="button" onClick="window.location.reload();">Leave Chat</button>
+        </header>
+        <main class="chat-section">
+            <div class="sender">
+                <p class="meta">You <span>9:12pm</span></p>
+                <p class="text">
+                    Hello.
+                </p>
+            </div>
+            <div class="reciever">
+                <p class="meta">Second User <span>9:15pm</span></p>
+                <p class="text">
+                    Good Morning!
+                </p>
+            </div>
+        </main>
+        <div class="input-box">
+            <form action="#" id="input-container">
+
+                <input type="text" name="input-message" id="input-message" placeholder="Enter Message" required autocomplete="off" />
+                <button class="input-button"><i class="fas fa-paper-plane"></i> Send</button>
+                <input type="file"/>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script defer src="http://localhost:9001/socket.io/socket.io.js"></script>
+    <script defer src="frontend\client.js"></script>
+</body>
+
+</html>
